@@ -72,9 +72,6 @@ class Teh_Slideshow_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/teh-slideshow-public.css', array(), $this->version, 'all' );
-
 	}
 
 	/**
@@ -95,9 +92,6 @@ class Teh_Slideshow_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
-		wp_enqueue_script( 'slick', plugin_dir_url( __FILE__ ) . 'js/slick.min.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/teh-slideshow-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 
